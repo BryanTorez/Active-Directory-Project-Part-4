@@ -11,30 +11,12 @@ Welcome to part four of five for the series on the active directory project. If 
 <img src="https://snipboard.io/hLEopa.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
 <br />
 <br />
 Today's objective is to install and configure active directory onto our server. We will then promote it to a domain controller and finally configure the target machines to join our newly created domain. Let's get started.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/9BWA3v.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -42,16 +24,16 @@ Today's objective is to install and configure active directory onto our server. 
 On our server, we want to set a static IP address of '192.168.10.7' and we can do this by right clicking the network icon on the bottom right. Then select "Open Network and Internet Settings". Click on "Change adapter options". Right-click the interface and click on "Properties".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/s3PXtA.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/c2QvNb.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/ld5One.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/6fjcim.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -59,27 +41,10 @@ On our server, we want to set a static IP address of '192.168.10.7' and we can d
 Double-click "Internet Protocol version 4". Select "Use the following IP address:" and here we will type in '192.168.10.7' subnet mask of '255.255.255.0'. The default gateway is '192.168.10.1' and the DNS is going to be '8.8.8.8', which is again Google's DNS.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/6UpNMJ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<br />
-<br />
-Click on "OK". Click "OK" to save and now let's open up command prompt by searching for "cmd" and click on command prompt. We'll type in "ipconfig" and our IP address should be '192.168.10.7'. So let's ping google.com and get some connectivity.
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/rHZkSD.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -90,36 +55,47 @@ Click on "OK". Click "OK" to save and now let's open up command prompt by search
 <br />
 <br />
 <br />
-Now, let's ping our Splunk server on 10.10 so we can get connectivity. Now, just as an FYI, you can't ping between Windows computers because by default it's blocking ICMP, which is pings. By default, if you want to enable that you need to create an inbound rule to allow ICMP traffic, but in this case since we can ping our Splunk server, we can assume that there is connectivity between the computers.
+Now let's open up command prompt by searching for "cmd" and click on command prompt. We'll type in "ipconfig" and our IP address should be '192.168.10.7'. So let's ping google.com and get some connectivity.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/BlG1nP.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Qeg6IN.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Xqg7da.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/wPKd3L.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-Now that we verified connectivity, let's head over to Server Manager, which is this icon right here. On the top right corner, we want to click "Manage". Now, select "Add Roles and Features". We'll select "Next" and make sure it is selected as "Role-based or feature-based installation".
+Now, let's ping our Splunk server on '10.10' so we can get connectivity. Now, just as an FYI, you can't ping between Windows computers because by default it's blocking ICMP, which are pings. If you want to enable that you need to create an inbound rule to allow ICMP traffic, but in this case since we can ping our Splunk server, we can assume that there is connectivity between the computers.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Do80Zp.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/WAeRM2.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now that we verified connectivity, let's head over to Server Manager, which is this icon right here. On the top right corner, we want to click "Manage". Now, select "Add Roles and Features". Make sure it is selected as "Role-based or feature-based installation".
+<br />
+<br />
+<img src="https://snipboard.io/8FeGcE.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/bKkr2q.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/aBDgVv.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+<br />
+<img src="https://snipboard.io/csqnyA.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -127,16 +103,16 @@ Now that we verified connectivity, let's head over to Server Manager, which is t
 If you have multiple servers, this is where it'll be listed, but because we only have one, this is it. So we'll just select "Next" and we want to select "Active Directory Domain Services". Then, click on "Add Features". I'll keep on clicking "Next" until we start installing.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/2EatdX.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/IZb7Ek.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/uBcXmt.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/p9n8bV.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -144,33 +120,18 @@ If you have multiple servers, this is where it'll be listed, but because we only
 Once we install it, it will take some time for it to install "Active Directory Domain Services", but after a couple minutes you want to take a look at the progress bar and if it says "installation succeeded", that is when you know that it installed our active directory.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/YkBCFV.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-So after a couple minutes, we get the "configuration required. Installation succeeded on ADDC01." So we can go ahead and close this out. I'll minimize the command prompt. See the flag icon beside "Manage", you want to click on that.
+So after a couple minutes, we get the "configuration required. Installation succeeded on ADDC01." So we can go ahead and close this out. See the flag icon beside "Manage", you want to click on that.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/UTN3MG.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Xvy1Ao.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -178,16 +139,10 @@ So after a couple minutes, we get the "configuration required. Installation succ
 You'll see "Promote This Server to a domain controller". Go ahead and click on that. Now, for this option we want to select "Add a new forest" because we are creating a brand new domain.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/ZYOEcu.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/T6Bqrv.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -195,16 +150,7 @@ You'll see "Promote This Server to a domain controller". Go ahead and click on t
 As for the domain name, I'll call it "mydfir.local". The domain name must have a top-level domain, so in other words my domain name cannot simply be "mydfir". It must be "mydfir.something".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/dKcwEz.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -212,50 +158,21 @@ As for the domain name, I'll call it "mydfir.local". The domain name must have a
 I'll hit "Next". I'll leave everything default. Put in a password and click "Next" until you see "Paths". These will be the paths used to store our database file named "NTDS.dit".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/gFyrKL.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/eOjtC9.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-As an FYI, attackers love to target domain controllers. Not only because it has access to everything, but also because of this file as it contains everything related to active directory including passwords and hashes.
+As an FYI, attackers love to target domain controllers. Not only because it has access to everything, but also because of this file. As it contains everything related to active directory including passwords and hashes. If you notice any unauthorized activity towards this file, you can assume that your entire domain is unfortunately compromised. Click on "Next". Once the setup finishes verifying prerequisites, we can go ahead and click on "Install"
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/0Sw3As.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<br />
-<br />
-If you notice any unauthorized activity towards this file, you can assume that your entire domain is unfortunately compromised. Click on "Next". Once the setup finishes verifying prerequisites, we can go ahead and click on "Install"
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/9KRDFj.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -263,33 +180,18 @@ If you notice any unauthorized activity towards this file, you can assume that y
 Once the setup is completed, the server will automatically restart. Your gonna see that you're about to be signed out and that is absolutely okay. We can go ahead and click on "Close" and our server should automatically restart.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/7ITuC6.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/zGqCVD.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-All right, let's log back into our server and you will see our domain followed by a backslash which indicates that we have successfully installed ADDS, and promoted our server to a domain controller.
+All right, let's log back into our server and you will see our domain followed by a backslash which indicates that we have successfully installed "ADDS", and promoted our server to a domain controller.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/N6dHCL.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -297,16 +199,7 @@ All right, let's log back into our server and you will see our domain followed b
 The next step is to start creating some users, so let's log in and do just that. On our server manager, we want to click on "Tools" at the top right corner and we want to select "Active Directory Users and Computers".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/F1amHx.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -314,16 +207,10 @@ The next step is to start creating some users, so let's log in and do just that.
 This is where we can create objects such as users, computers, groups, and many more. Let's go ahead and expand our domain and we see a couple of folders called "Builtin", "Computers", "Domain Controllers", and many more.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/g7BkTr.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/3KuQ1c.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -331,16 +218,7 @@ This is where we can create objects such as users, computers, groups, and many m
 Now, if we click into "Builtin", we see all of the groups listed on the right hand side. These groups have been automatically created by the active directory and we can double-click any of these and read the description.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/1ueoVN.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -348,16 +226,13 @@ Now, if we click into "Builtin", we see all of the groups listed on the right ha
 For example, I'll double click "Administrators" and the description here is "Administrators have complete and unrestricted access". Under the tab "Members", we will see who is assigned to this group. Under the tab "Member Of", we will see what other groups this group is in.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/li0b6p.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/aXPf91.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/vaqIkV.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -365,16 +240,10 @@ For example, I'll double click "Administrators" and the description here is "Adm
 As an FYI, you cannot add additional groups within a built-in group but you can create a custom group and add that built-in group to the custom group. So for example, I can't add anything here but if I right-click "New".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/gOB10S.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/EXMxhr.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -382,16 +251,13 @@ As an FYI, you cannot add additional groups within a built-in group but you can 
 Then click "Group" and type in "test". Hit "OK". Double-click the test and click on "Member Of". I can type in any group I want. For example, type "Administrators" and then click "Check Names" and hit "OK".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Nycrjh.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/kPzahZ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/uPh3e6.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
