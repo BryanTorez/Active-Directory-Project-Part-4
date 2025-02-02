@@ -47,12 +47,6 @@ Double-click "Internet Protocol version 4". Select "Use the following IP address
 <img src="https://snipboard.io/rHZkSD.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
 <br />
 <br />
 Now let's open up command prompt by searching for "cmd" and click on command prompt. We'll type in "ipconfig" and our IP address should be '192.168.10.7'. So let's ping google.com and get some connectivity.
@@ -262,53 +256,38 @@ Then click "Group" and type in "test". Hit "OK". Double-click the test and click
 <br />
 <br />
 <br />
-So this is the "Builtin" group whereas a "builtin" group you cannot do because if you click on "Member Of", these are all grayed out. If we click on the "User" folder, we will see a list of users along with additional groups.
+So this is the "Builtin" group. If we click on the "User" folder, we will see a list of users along with additional groups.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/EIVB2F.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/2XgnAt.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-Now, if we want. We can create a user within this folder similar to how I did it with the group, but in a real world environment it is likely broken up to different departments, AKA organizational units. 
+Now, if we want. We can create a user within this folder similar to how I did it with the group, but in a real world environment it is likely broken up to different departments, AKA organizational units. For example, HR Finance, IT, Sales, etc.  
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/d6enao.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-For example, HR Finance, IT, Sales, etc. To mimic that, we can right-click the domain go under "New" and select "Organizational unit". We'll name this "IT". I'll click on "OK" and now we have a new organizational unit created.
+To mimic that, we can right-click the domain go under "New" and select "Organizational unit". We'll name this "IT". I'll click on "OK" and now we have a new organizational unit created.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Oxf7bN.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/gWuHVX.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/EwSyxC.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Zi6H1U.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -316,16 +295,10 @@ For example, HR Finance, IT, Sales, etc. To mimic that, we can right-click the d
 Now, within this unit I'll right-click "New" and I'll create a new user. The first name for my new user will be "Jenny" and the last name will be "Smith". So Jenny's username will be "J Smith". I'll hit "Next".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/goqaIA.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/UtZK1w.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -333,16 +306,13 @@ Now, within this unit I'll right-click "New" and I'll create a new user. The fir
 As for the password, we can put whatever we want. Now, because we are in a lab environment, we can go ahead and uncheck "User must change password". I'll click on "Next" and "Finish".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/c43S8h.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/6W2n09.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/gnlLPe.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -350,16 +320,10 @@ As for the password, we can put whatever we want. Now, because we are in a lab e
 Now, that we have a new user, let's create another organizational unit and this time we'll call it "HR". So I'll right-click the domain. Click "new" and then click "Organizational unit". Type in "HR". Click on "OK"
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/vhR5OP.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/LriZMt.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -367,16 +331,16 @@ Now, that we have a new user, let's create another organizational unit and this 
 Now, let's create another user and for this user I will name "Terry Smith" and the username is "T Smith". Click on "Next". For the password, put in a super secure password and I'll uncheck the "user must change password". Click on "Next" and "Finish".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/uzT1kX.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/gJGmuc.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/cfhyS2.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/CyHAMD.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -384,118 +348,68 @@ Now, let's create another user and for this user I will name "Terry Smith" and t
 So now we have two users that we just created. There are many scripts out there that can help you auto-create users, groups, and computers but for this project we'll only create two users.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now that we have our active directory and our server is a domain controller, we will head over to our Windows target machine. We'll join it to our newly created domain called "mydfir.local" and authenticate using "Jenny Smith" account.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+On our Windows 10 machine we want to search up "PC" and then click on "Properties". Scroll down to select "Advanced system settings". Then, for the tab we want to click on "Computer Name". Select "Change" and make sure you select "Domain".
 <br />
 <br />
+<img src="https://snipboard.io/Abpx4n.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Now that we have our active directory set up and our server is now a domain controller, we will now head over to our Windows target machine. We'll join it to our newly created domain called "mydfir.local" and authenticate using "Jenny Smith" account on our Windows 10 machine.
+<img src="https://snipboard.io/xs0ZAm.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/YOAb5Q.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/jTQGRc.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now, we can type in our domain of "mydfir.local". Now, you might get an error saying "An Active Directory Domain Controller for the domain "mydfir.local" could not be contacted". This is because our target machine does not know how to resolve "mydfir.local" and this all goes back to how DNS works.
 <br />
 <br />
+<img src="https://snipboard.io/yxB0SU.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-We want to search up "PC" and then click on "Properties". Scroll down to select "Advanced system settings". Then, for the tab we want to click on "Computer Name". Select "Change" and make sure you select "Domain".
+<img src="https://snipboard.io/OT7WrN.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now to fix this, we can head over to our network adapter and right-click. Click on "Open Network and Internet settings". Click on "Change adapter options". We want to right-click our adapter and select "Properties". Double-click "Internet Protocol version 4".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/LJa5Ww.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/WugQPi.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
+<img src="https://snipboard.io/IuDl4f.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Now, we can type in our domain of "mydfir.local". Now, you might get an error saying "An Active Directory Domain Controller for the domain "mydfir.local" could not be contacted".
+<img src="https://snipboard.io/XZsFEA.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Now, if you take a look at our DNS server, it is pointing to Google's DNS. We want to change this to point to our domain controller. Which is hosted on '192.168.10.7'. Then, I'll hit "OK". Now, just to make sure everything is good to go. We'll type in "CMD" to open up our Command Prompt.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/FGcSdp.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/SpkCRh.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<br />
-<br />
-This is because our target machine does not know how to resolve "mydfir.local" and this all goes back to how DNS works. Now to fix this, we can head over to our network adapter and right-click.
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<br />
-<br />
-Click on "Open Network and Internet settings". Click on "Change adapter options". We want to right-click our adapter and select "Properties". Double-click "Internet Protocol version 4". Now, if you take a look at our DNS server, it is pointing to Google's DNS.
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<br />
-<br />
-We want to change this to point to our domain controller. Which is hosted on '192.168.10.7'. Then, I'll hit "OK". Select "OK". Now, just to make sure everything is good to go. We'll type in "CMD" to open up our Command Prompt.
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/VSYnuH.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -503,16 +417,13 @@ We want to change this to point to our domain controller. Which is hosted on '19
 Then, I'll type in "ipconfig /all". This will show our DNS server. In this case, we can see that it is pointing to our domain controller. So in theory, we should be good to join our domain. So let's go ahead and do that.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/y9pfNZ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/HsmBSM.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/wzcvdm.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
@@ -520,86 +431,51 @@ Then, I'll type in "ipconfig /all". This will show our DNS server. In this case,
 I'll select "OK" again. Now, we're prompted to enter some credentials. We will use the administrator account of the server to log in, as this account will have the proper permissions. 
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/qp2nsy.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/3KNFuo.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-So I'll type in "administrator" and then the password. In a real-world environment, you would create users and put them into a custom group that are authorized to allow computers to join the domain.
+So I'll type in "administrator" and then the password. In a real-world environment, you would create users and put them into a custom group that are authorized to allow computers to join the domain. Now we see a window popup saying "Welcome to the mydfir.local domain."
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/voaO0E.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/O8vrm4.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-Now we see a window popup saying "Welcome to the mydfir.local domain." We'll go ahead and hit "Ok". Then, click on "OK" again. It'll say you must restart your computer to apply these changes. So let's go ahead and close it out.
+It'll say you must restart your computer to apply these changes. So let's go ahead and close it out. You'll be prompted to restart now or later, let's do it now. Once we're on the log on screen, we want to log in with our newly created user called "Jenny Smith" and Jenny's username is "J Smith".
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/UdSPYx.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/ZkbPwM.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-You'll be prompted to restart now or later, let's do it now. Once we're on the log on screen, we want to log in with our newly created user called "Jenny Smith" and Jenny's username is "J Smith".
+So in order to do that, we want to select "Other User" and we want to make sure that our "Sign in to:" is pointing to our domain. We see it as "mydfir" so that's perfect. Well, the username is "J Smith" and we'll enter in our password. So that is how we create a new user, join our computer to a new domain, and log in as a domain user.
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/VDyR2E.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/oULDIP.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/Rm57kZ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<br />
-<br />
-So in order to do that, we want to select "Other User" and we want to make sure that our "Sign in to:" is pointing to our domain. We see it as "mydfir" so that's perfect. Well, the username is "J Smith" and we'll enter in our password.
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/7w6fFe.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
-So that is how we create a new user, join our computer to a new domain, and log in as a domain user. Congratulations on configuring your own active directory server and creating two users, as well as joining a machine to your newly created domain. The sky is the limit from here on out. If you want to learn more about IT Administration, you now have a fully functional active directory server to play around with. The last thing to do here is to make sure that you snapshot all of your virtual machines. That way, in case you do, break something, which you should never be afraid of, you can always restore to a known good state. In the next part of our series, which will be the last episode, we will use Kali Linux to perform a brute force attack and also set up Atomic Red Team on our Windows target machine to generate some telemetry to view on Splunk. That is it for this part and I hope you are enjoying this project series.
+Congratulations on configuring your own active directory server and creating two users, as well as joining a machine to your newly created domain. The sky is the limit from here on out. If you want to learn more about IT Administration, you now have a fully functional active directory server to play around with. The last thing to do here is to make sure that you snapshot all of your virtual machines. That way, in case you do, break something, which you should never be afraid of, you can always restore to a known good state. In the next part of our series, which will be the last episode, we will use Kali Linux to perform a brute force attack and also set up Atomic Red Team on our Windows target machine to generate some telemetry to view on Splunk. That is it for this part and I hope you are enjoying this project series.
